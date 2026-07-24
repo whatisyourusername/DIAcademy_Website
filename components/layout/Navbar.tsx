@@ -44,7 +44,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="text-3xl md:hidden"
+          className="text-3xl md:hidden text-gray-500 hover:text-white active:text-blue-600"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? "✕" : "☰"}
@@ -52,10 +52,10 @@ export default function Navbar() {
 
       </div>
       {menuOpen && (
-        <div className="absolute left-0 top-16 w-full bg-gray-100 shadow-lg md:hidden">
+        <div className="absolute left-0 top-16 w-full bg-gray-600 shadow-lg md:hidden">
 
           <button
-            className="block w-full px-6 py-4 text-left"
+            className="block w-full px-6 py-4 text-left hover:text-white active:text-blue-400"
             onClick={() => {
               scrollToSection("main");
               setMenuOpen(false);
@@ -65,7 +65,7 @@ export default function Navbar() {
           </button>
 
           <button
-            className="block w-full px-6 py-4 text-left"
+            className="block w-full px-6 py-4 text-left hover:text-white active:text-blue-400"
             onClick={() => {
               scrollToSection("courses");
               setMenuOpen(false);
@@ -75,7 +75,7 @@ export default function Navbar() {
           </button>
 
           <button
-            className="block w-full px-6 py-4 text-left"
+            className="block w-full px-6 py-4 text-left hover:text-white active:text-blue-400"
             onClick={() => {
               scrollToSection("faculty");
               setMenuOpen(false);
@@ -85,7 +85,7 @@ export default function Navbar() {
           </button>
 
           <button
-            className="block w-full px-6 py-4 text-left"
+            className="block w-full px-6 py-4 text-left hover:text-white active:text-blue-400"
             onClick={() => {
               scrollToSection("reviews");
               setMenuOpen(false);
@@ -95,7 +95,7 @@ export default function Navbar() {
           </button>
 
           <button
-            className="block w-full px-6 py-4 text-left"
+            className="block w-full px-6 py-4 text-left hover:text-white active:text-blue-400"
             onClick={() => {
               scrollToSection("contact");
               setMenuOpen(false);
