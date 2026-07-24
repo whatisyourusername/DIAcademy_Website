@@ -1,16 +1,44 @@
+"use client";
+
+import Image from "next/image";
+import { scrollToSection } from "@/lib/scroll";
+
 export default function Navbar() {
   return (
-    <nav className="w-full h-20 flex items-center justify-between px-10 bg-white shadow-sm">
+    <nav className="sticky top-0 z-50 h-20 border-b border-gray-100 bg-gray-100/80 backdrop-blur-md">
 
-      <h1 className="text-2xl font-bold">
-        DI Academy
-      </h1>
+      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-8">
 
-      <div className="flex gap-8">
-        <button>About</button>
-        <button>Courses</button>
-        <button>Teachers</button>
-        <button>Contact</button>
+        <Image
+          src="/images/site_logo.png"
+          alt="DI Academy"
+          width={240}
+          height={60}
+          priority
+        />
+
+        <div className="flex gap-10 text-sm font-medium text-gray-700">
+          <button onClick={() => scrollToSection("main")} className="hover:text-white active:text-blue-400">
+            About
+          </button>
+
+          <button onClick={() => scrollToSection("courses")} className="hover:text-white active:text-blue-400">
+            수업
+          </button>
+
+          <button onClick={() => scrollToSection("faculty")} className="hover:text-white active:text-blue-400">
+            강사진
+          </button>
+
+          <button onClick={() => scrollToSection("reviews")} className="hover:text-white active:text-blue-400">
+            수강 후기
+          </button>
+
+          <button onClick={() => scrollToSection("contact")} className="hover:text-white active:text-blue-400">
+            연락처
+          </button>
+        </div>
+
       </div>
 
     </nav>

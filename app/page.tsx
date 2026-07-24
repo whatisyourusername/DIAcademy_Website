@@ -1,11 +1,19 @@
 import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/home/Hero";
+import Main from "@/components/home/Main";
+import Courses from "@/components/home/Courses";
+import Faculty from "@/components/home/Faculty";
+import Reviews from "@/components/home/Reviews";
+import Contact from "@/components/home/Contact";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Main />
+      <Courses />
+      <Faculty />
+      <Reviews />
+      <Contact />
     </>
   );
 }
