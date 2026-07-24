@@ -5,6 +5,8 @@ import Faculty from "@/components/home/Faculty";
 import Reviews from "@/components/home/Reviews";
 import Contact from "@/components/home/Contact";
 
+// npm run dev
+
 export default function Home() {
   return (
     <>
