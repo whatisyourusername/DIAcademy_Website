@@ -5,9 +5,9 @@ import { scrollToSection } from "@/lib/scroll";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 h-20 border-b border-gray-100 bg-gray-100/80 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 h-16 border-b border-gray-200 bg-gray-100/80 backdrop-blur-md md:h-20">
 
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-8">
+      <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between px-4 md:px-8">
 
         <Image
           src="/images/site_logo.png"
