@@ -4,11 +4,11 @@ import { scrollToSection } from "@/lib/scroll";
 
 export default function Main() {
   return (
-    <section 
-    id="main"
-    className="flex h-[calc(100vh-80px)] flex-col items-center justify-center bg-gradient-to-b from-white to-blue-50">
+    <section
+      id="main"
+      className="flex h-[calc(100vh-80px)] flex-col items-center justify-center bg-gradient-to-b from-white to-blue-50">
 
-      <h1 className="text-6xl font-extrabold text-gray-900">
+      <h1 className="px-4 text-4xl font-extrabold text-gray-900 sm:px-6 md:px-0 md:text-6xl">
         QUAD ACADEMY
       </h1>
 
@@ -19,17 +19,17 @@ export default function Main() {
       <div className="mt-10 flex gap-4">
 
         <button
-        onClick={() => scrollToSection("contact")}
-        className="rounded-xl border border-blue-600 px-8 py-4 
+          onClick={() => scrollToSection("contact")}
+          className="rounded-xl border border-blue-600 px-8 py-4 
         font-semibold text-blue-600 
         transition hover:bg-blue-600 hover:text-white"
         >
           무료 상담
         </button>
 
-        <button 
-        onClick={() => scrollToSection("courses")}
-        className="rounded-xl border border-blue-600 px-8 py-4 
+        <button
+          onClick={() => scrollToSection("courses")}
+          className="rounded-xl border border-blue-600 px-8 py-4 
         font-semibold text-blue-600 
         transition hover:bg-blue-600 hover:text-white">
           강의 보기
