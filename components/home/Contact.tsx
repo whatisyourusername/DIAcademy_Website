@@ -35,7 +35,7 @@ export default function Contact() {
           }
           className="text-blue-600 hover:underline"
         >
-          contact@diacademy.com
+          contact@gmail.com
         </button>
       </div>
 
