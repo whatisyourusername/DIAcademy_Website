@@ -43,7 +43,7 @@ export default function Faculty() {
     >
       <div className="mx-auto max-w-7xl px-4 md:px-8">
 
-        <h2 className="mb-12 text-center text-4xl font-bold">
+        <h2 className="mb-12 text-center text-4xl font-bold text-gray-700">
           Faculty
         </h2>
 
